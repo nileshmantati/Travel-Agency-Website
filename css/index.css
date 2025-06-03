@@ -15,6 +15,55 @@ img {
 
 /* Header Start */
 
+.cell_number a,
+.domain_name a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.cell_number a:hover,
+.domain_name a:hover {
+    color: black;
+}
+
+.top_ul li {
+    list-style: none;
+    position: relative;
+}
+
+.top_ul a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.top_ul .top-link:hover {
+    color: black;
+}
+
+.top_submenu {
+    display: none;
+    position: absolute;
+    top: 38px;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 15;
+}
+
+.top_submenu a {
+    color: black;
+    display: block;
+}
+
+.top_ul li:hover .top_submenu {
+    display: block;
+}
+
+.top_submenu a:hover {
+    color: #ffffff;
+    background-color: rgb(50, 50, 254);
+}
+
 .nav {
     background-color: #757575;
 }
@@ -22,7 +71,7 @@ img {
 .sticky-top {
     top: 0;
     position: sticky !important;
-    z-index: 1030;
+    z-index: 10;
 }
 
 .navbar-brand {
