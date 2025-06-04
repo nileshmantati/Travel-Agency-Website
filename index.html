@@ -13,92 +13,199 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
-
+    <style>
+    </style>
 
 </head>
 
 <body>
-
     <!-- Header Start -->
-    <div class="topbar bg-black">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="top_left py-3 d-flex align-items-center">
-                    <div class="icons pe-3 text-white border-1 border-end d-flex column-gap-2">
-                        <a href="#" class="text-white"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#" class="text-white"><i class="fa-brands fa-square-twitter"></i></a>
-                        <a href="#" class="text-white"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" class="text-white"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                    <div class="cell_number px-3 border-1 border-end">
-                        <a href="#">+011 234 567 89</a>
-                    </div>
-                    <div class="domain_name ps-3">
-                        <a href="#">contact@domain.com</a>
+    <header>
+        <div class="col-12" id="mainHeader">
+            <div class="topbar border-1 border-bottom d-none d-md-flex " id="topbar">
+                <div class="container-lg">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="top_left py-2 d-flex align-items-center">
+                            <div class="icons pe-3 text-white border-1 border-end d-flex column-gap-2">
+                                <a href="#" class="text-white"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#" class="text-white"><i class="fa-brands fa-square-twitter"></i></a>
+                                <a href="#" class="text-white"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#" class="text-white"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                            <div class="cell_number px-3 border-1 border-end">
+                                <a href="#">+011 234 567 89</a>
+                            </div>
+                            <div class="domain_name ps-3">
+                                <a href="#">contact@domain.com</a>
+                            </div>
+                        </div>
+                        <div class="top_right">
+                            <ul class="top_ul d-flex mb-0 ps-0">
+                                <li><a href="#" class="top-link pe-3">Login</a></li>
+                                <li><a href="#" class="top-link border-1 border-start border-end px-3">Sign up</a>
+                                </li>
+                                <li><a href="#" class="border-1 border-start border-end px-3">English</a>
+                                    <ul class="top_submenu ps-0 mb-0">
+                                        <li><a href="#" class="px-3 py-1">English</a></li>
+                                        <li><a href="#" class="px-3 py-1">Arabic</a></li>
+                                        <li><a href="#" class="px-3 py-1">French</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="border-1 border-start border-end px-3">USD</a>
+                                    <ul class="top_submenu ps-0 mb-0">
+                                        <li><a href="#" class="px-3 py-1">USD</a></li>
+                                        <li><a href="#" class="px-3 py-1">BD</a></li>
+                                        <li><a href="#" class="px-3 py-1">URO</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="top_right">
-                    <ul class="top_ul d-flex mb-0 ps-0">
-                        <li><a href="#" class="top-link pe-3">Login</a></li>
-                        <li><a href="#" class="top-link border-1 border-start border-end px-3">Sign up</a></li>
-                        <li><a href="#" class="border-1 border-start border-end px-3">English</a>
-                            <ul class="top_submenu ps-0 mb-0">
-                                <li><a href="#" class="px-3 py-1">English</a></li>
-                                <li><a href="#" class="px-3 py-1">Arabic</a></li>
-                                <li><a href="#" class="px-3 py-1">French</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#" class="border-1 border-start border-end px-3">USD</a>
-                            <ul class="top_submenu ps-0 mb-0">
-                                <li><a href="#" class="px-3 py-1">USD</a></li>
-                                <li><a href="#" class="px-3 py-1">BD</a></li>
-                                <li><a href="#" class="px-3 py-1">URO</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+            </div>
+            <div class="nav pt-1">
+                <div class="container-lg">
+                    <nav class="navbar navbar-expand-lg py-0">
+                        <div class="container-fluid px-0 justify-content-between">
+                            <a class="navbar-brand ps-0 text-white me-5" href="#"><img src="./img/Logo.png" alt=""></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                                <ul class="navbar-nav mb-2 mb-lg-0 column-gap-3">
+                                    <li class="nav-item d-flex align-items-center">
+                                        <a class="nav-link active fw-medium" aria-current="page" href="#home">Home<i
+                                                class="fa-solid fa-angle-down ms-1"></i></a>
+                                    </li>
+                                    <li class="nav-item d-flex align-items-center">
+                                        <a class="nav-link fw-medium" href="#about">Tours<i
+                                                class="fa-solid fa-angle-down ms-1"></i></a>
+                                    </li>
+                                    <li class="nav-item d-flex align-items-center">
+                                        <a class="nav-link fw-medium" href="#services">Flights<i
+                                                class="fa-solid fa-angle-down ms-1"></i></a>
+                                    </li>
+                                    <li class="nav-item d-flex align-items-center">
+                                        <a class="nav-link fw-medium" href="#portfolio">Hotel<i
+                                                class="fa-solid fa-angle-down ms-1"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link fw-medium" href="#contact">Contact</a>
+                                    </li>
+                                </ul>
+                                <div class="option_item">
+                                    <a href="#" class="px-3 py-2 rounded-2" id="option_btn">Become a partner</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
             </div>
         </div>
-    </div>
-    <section class="nav shadow py-3">
-        <header class="container">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid justify-content-between">
-                    <a class="navbar-brand px-3 text-white" href="#"><img src="./img/Logo.png" alt=""></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                        <ul class="navbar-nav mb-2 mb-lg-0 column-gap-3">
-                            <li class="nav-item d-flex align-items-center">
-                                <a class="nav-link active fw-medium" aria-current="page" href="#home">Home<i
-                                        class="fa-solid fa-angle-down ms-1"></i></a>
+
+        <!-- Home Section Start  -->
+        <section class="home_section">
+            <div class="container-lg">
+                <div class="home_text text-center">
+                    <h1 class="text-white display-2">Explore the world together</h1>
+                    <h4 class="text-white fw-light">Find awesome flights, hotel, tour, car and packages</h4>
+                </div>
+            </div>
+        </section>
+        <!-- Home Section End  -->
+
+    </header>
+    <!-- Header End -->
+
+
+    <section class="search_form">
+        <div class="container-lg">
+            <div class="row">
+                <div class="search_form_area bg-white p-4 d-flex flex-column row-gap-4">
+                    <div
+                        class="tabbtn d-flex justify-content-center justify-content-md-between flex-wrap flex-md-nowrap row-gap-3">
+                        <ul class="nav1 mb-0 ps-0 d-flex column-gap-4 row-gap-3 flex-wrap justify-content-center">
+                            <li><button class="active px-3 py-2 rounded-2"><i
+                                        class="fa-solid fa-plane-departure me-2"></i>Flights</button>
                             </li>
-                            <li class="nav-item d-flex align-items-center">
-                                <a class="nav-link fw-medium" href="#about">Tours<i
-                                        class="fa-solid fa-angle-down ms-1"></i></a>
+                            <li><button class="px-3 py-2 rounded-2"><i class="fa-solid fa-globe me-2"></i>Tours</button>
                             </li>
-                            <li class="nav-item d-flex align-items-center">
-                                <a class="nav-link fw-medium" href="#services">Flights<i
-                                        class="fa-solid fa-angle-down ms-1"></i></a>
+                            <li><button class="px-3 py-2 rounded-2"><i
+                                        class="fa-solid fa-hotel me-2"></i>Hotels</button>
                             </li>
-                            <li class="nav-item d-flex align-items-center">
-                                <a class="nav-link fw-medium" href="#portfolio">Hotel<i
-                                        class="fa-solid fa-angle-down ms-1"></i></a>
+                        </ul>
+                        <ul class="nav2 mb-0 ps-0 d-flex column-gap-4 row-gap-2 flex-wrap justify-content-center">
+                            <li><button class="active px-3 py-2 rounded-2 border-0">One Way</button>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link fw-medium" href="#contact">Contact</a>
+                            <li><button class="px-3 py-2 rounded-2 border-0">Roundtrip</button>
+                            </li>
+                            <li><button class="px-3 py-2 rounded-2 border-0">Multi city</button>
                             </li>
                         </ul>
                     </div>
+                    <div class="tab_content">
+                        <div class="row">
+                            <div class="search_form">
+                                <form action="#">
+                                    <div class="row row-gap-4">
+                                        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                                            <div
+                                                class="flight_box py-2 ps-3 pe-2 position-relative d-flex flex-column align-items-start rounded-3 row-gap-1">
+                                                <p class="mb-0">From</p>
+                                                <input type="text" name="" id="" value="New York"
+                                                    class="border-0 fs-4 fw-medium col-12 bg-transparent">
+                                                <span>JFK - John F, Kennedy International..</span>
+                                                <div class="plane_icon"><i
+                                                        class="fa-solid fa-plane-departure fa-xl me-2"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                                            <div
+                                                class="flight_box py-2 ps-3 pe-2 position-relative d-flex flex-column align-items-start rounded-3 row-gap-1">
+                                                <p class="mb-0">To</p>
+                                                <input type="text" name="" id="" value="London"
+                                                    class="border-0 fs-4 fw-medium col-12 bg-transparent">
+                                                <span>LCY, London city airport</span>
+                                                <div class="plane_icon">
+                                                    <i class="fa-solid fa-plane-arrival fa-xl me-2"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                            <div
+                                                class="flight_box py-2 ps-3 pe-2 position-relative d-flex flex-column align-items-start rounded-3 row-gap-1">
+                                                <p class="mb-0">From</p>
+                                                <input type="date" name="" id="" value="2022-05-05"
+                                                    class="border-0 fs-4 fw-medium col-12 bg-transparent">
+                                                <span>Thursday</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-6 col-lg-2">
+                                            <div
+                                                class="flight_box py-2 ps-3 pe-2 position-relative d-flex flex-column align-items-start rounded-3 row-gap-1">
+                                                <p class="mb-0">Passenger, Class</p>
+                                                <h4 class="fs-4 fw-medium">0 Passenger</h4>
+                                                <!-- <input type="text" name="" id="" value="New York"
+                                                    class="border-0 fs-4 fw-medium col-12 bg-transparent"> -->
+                                                <span>Business</span>
+                                            </div>
+                                        </div>
+                                        <div class="search_btn col-12 d-flex justify-content-center">
+                                            <button class="py-2 rounded-2">Search</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </div>
     </section>
-    <section></section>
-    <!-- Header End -->
+
 </body>
 <script src=" ./js/jquery.js">
 </script>
@@ -106,14 +213,52 @@
 <!-- <script src="./js/bootstrap.min.js"></script> -->
 <script src="./js/owl.carousel.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
 <script>
-    var typed = new Typed(".typing", {
-        strings: ["Web Designer", "Web Developer"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    })
+    const header = document.getElementById("mainHeader");
+    const elem = document.getElementById("option_btn");
+    const topbar = document.getElementById("topbar");
+
+    // Add hover events ONCE
+    elem.addEventListener("mouseover", function () {
+        if (window.scrollY <= 200) {
+            elem.style.border = "1px solid #8B3EEA";
+            elem.style.backgroundColor = "transparent";
+        }
+        else {
+            elem.style.border = "none";
+            elem.style.backgroundColor = "transparent";
+        }
+    });
+    elem.addEventListener("mouseout", function () {
+        if (window.scrollY <= 200) {
+            elem.style.border = "none";
+            elem.style.backgroundColor = "#8B3EEA";
+        }
+        else {
+            elem.style.border = "1px solid #8B3EEA";
+            elem.style.backgroundColor = "transparent";
+        }
+    });
+
+    // Scroll Event
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 200) {
+            header.classList.add("shrink");
+            topbar.style.display = "none";
+            elem.style.border = "1px solid #ffffff";
+            elem.style.backgroundColor = "transparent";
+        } else {
+            header.classList.remove("shrink");
+            topbar.style.display = "flex";
+            elem.style.border = "none";
+            elem.style.backgroundColor = "#8B3EEA";
+        }
+    });
+
+
+
+
+
 </script>
 
 </html>
