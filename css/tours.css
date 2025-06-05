@@ -143,8 +143,8 @@ img {
 }
 
 .home_text {
-    padding-top: 20rem;
-    padding-bottom: 20rem;
+    padding-top: 10rem;
+    padding-bottom: 13rem;
 }
 
 .home_text h2 {
@@ -153,7 +153,7 @@ img {
 
 .home_text a {
     text-decoration: none;
-    color: gray;
+    color: rgb(201, 201, 201);
     transition: all ease-in-out .3s;
 }
 
@@ -281,111 +281,6 @@ img {
     font-weight: 600;
 }
 
-/* top Destinations Sction Start  */
-
-.destinations_left_box img {
-    transform: scale(1);
-    transition: all ease-in-out .4s;
-}
-
-.destinations_left_box:hover img {
-    transform: scale(1.3);
-}
-
-.destinations_left_text {
-    color: #ffffff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-}
-
-.percentage h1 {
-    font-size: 8rem;
-}
-
-.percentage h6 {
-    display: flex;
-    flex-direction: column;
-}
-
-.destinations_left_box::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    z-index: 1;
-    background-color: rgba(139, 62, 234, 0.61);
-    transition: all ease-in-out .3s;
-}
-
-.destinations_left_box:hover::after {
-    opacity: 1;
-}
-
-.destinations_left_text a {
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #8B3EEA;
-    border: none;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    transition: all ease-in-out .3s;
-}
-
-.destinations_left_text a:hover {
-    background-color: black;
-}
-
-.destinations_right_text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 2;
-    transform: translate(-50%, -50%);
-}
-
-.destinations_right_text h3 a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 400;
-}
-
-.destinations_right_box:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    z-index: 1;
-    background-color: rgba(139, 62, 234, 0.61);
-    transition: all ease-in-out .3s;
-}
-
-.destinations_right_box:hover::after {
-    opacity: 1;
-}
-
-.destinations_right_btn a {
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #8B3EEA;
-    border: none;
-    transition: all ease-in-out .3s;
-}
-
-.destinations_right_btn a:hover {
-    background-color: black;
-}
-
 /* Explore Area Section Start */
 
 .heading_section h2::after {
@@ -469,174 +364,82 @@ img {
     color: #8B3EEA;
 }
 
-/* Offer Section Start */
-
-.offer_box::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    z-index: 1;
-    background-color: rgba(139, 62, 234, 0.61);
-    transition: all ease-in-out .3s;
+.ui-slider {
+    background: #ddd;
+    height: 6px;
+    border-radius: 3px;
+    border: none;
 }
 
-.offer_content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    color: #ffffff;
-    z-index: 2;
+.ui-slider-range {
+    background: #8B3EEA;
 }
 
-.offer_content a {
+.ui-slider-handle {
+    background: #fff;
+    border: 2px solid #8B3EEA;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    top: -8px;
+    cursor: pointer;
+}
+
+.price-label {
+    position: absolute;
+    top: -30px;
+    background: #8B3EEA;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.left_search_box button {
+    color: #8B3EEA;
+    border: none;
+    background-color: transparent;
+}
+
+.form_check input {
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid rgba(0, 0, 0, .25);
+}
+
+.form_check input:focus {
+    border-color: #86b7fe;
+    outline: none;
+    box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25);
+}
+
+.form_check .color {
+    color: #8B3EEA;
+}
+
+.form_check .gray {
+    color: rgb(189, 189, 189);
+}
+
+.pagination ul li {
+    list-style: none;
+}
+
+.pagination ul li a {
     text-decoration: none;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    color: #8B3EEA;
+    border-radius: 5px;
+    padding: 2px 5px;
+    transition: all ease-in-out .4s;
+}
+
+.pagination ul li a:hover {
     color: #ffffff;
     background-color: #8B3EEA;
-    transition: all ease-in-out .4s;
-}
-
-.offer_content a:hover {
-    background-color: black;
-}
-
-.offer_box:hover::after {
-    opacity: 1;
-}
-
-/* Promotional Tours Section Start  */
-
-.owl-theme .owl-dots .owl-dot.active span {
-    background: #8B3EEA !important;
-}
-
-/* Destinations Section Start */
-
-.destinations_content_box {
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    transition: all ease-in-out .4s;
-}
-
-.destinations_content_box:hover {
-    box-shadow: 4px 14px 28px rgba(0, 0, 0, .1);
-}
-
-.destinations_content_box h3 a {
-    color: black;
-    font-size: 1.4rem;
-    font-weight: 400;
-    text-decoration: none;
-    transition: all ease-in-out .3s;
-}
-
-.destinations_content_box h3 a:hover {
-    color: #8B3EEA;
-}
-
-.destinations_content_box p span {
-    color: #8B3EEA;
-}
-
-/* Latest News Section Start */
-
-.news_item {
-    display: flex;
-    align-items: center;
-    transition: all ease-in-out .4s;
-}
-
-.news_img {
-    border-radius: 10px;
-}
-
-.news_text h3 {
-    line-height: 1.6rem !important;
-}
-
-.news_text h3 a {
-    text-decoration: none;
-    color: black;
-    font-size: 1.4rem;
-}
-
-.news_text h3 a:hover {
-    color: #8B3EEA;
-}
-
-.news_text p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.news_text p a {
-    text-decoration: none;
-    color: #8B3EEA;
-}
-
-.news_text p span {
-    font-weight: 500;
-    color: gray;
-    display: flex;
-    align-items: center;
-}
-
-.news_text p span i {
-    font-size: .4rem;
-}
-
-.all_link a {
-    text-decoration: none;
-    color: #8B3EEA;
-    transition: all ease-in-out .4s;
-}
-
-.all_link a:hover {
-    color: black;
-}
-
-.new_big_img img {
-    transform: scale(1);
-    transition: all ease-in-out .4s;
-}
-
-.new_big_img:hover img {
-    transform: scale(1.2);
-}
-
-.news_right h3 {
-    line-height: 1.6rem !important;
-}
-
-.news_right h3 a {
-    text-decoration: none;
-    color: black;
-    font-size: 1.4rem;
-}
-
-.news_right h3 a:hover {
-    color: #8B3EEA;
-}
-
-.news_right p {
-    color: gray;
-}
-
-.news_right a {
-    text-decoration: none;
-    color: #8B3EEA;
-    transition: all ease-in-out .4s;
-}
-
-.news_right a:hover {
-    color: black;
 }
 
 /* Newsletter Section Start */
