@@ -261,6 +261,111 @@ img {
     font-weight: 600;
 }
 
+/* top Destinations Sction Start  */
+
+.destinations_left_box img {
+    transform: scale(1);
+    transition: all ease-in-out .4s;
+}
+
+.destinations_left_box:hover img {
+    transform: scale(1.3);
+}
+
+.destinations_left_text {
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.percentage h1 {
+    font-size: 8rem;
+}
+
+.percentage h6 {
+    display: flex;
+    flex-direction: column;
+}
+
+.destinations_left_box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    background-color: rgba(139, 62, 234, 0.61);
+    transition: all ease-in-out .3s;
+}
+
+.destinations_left_box:hover::after {
+    opacity: 1;
+}
+
+.destinations_left_text a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #8B3EEA;
+    border: none;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    transition: all ease-in-out .3s;
+}
+
+.destinations_left_text a:hover {
+    background-color: black;
+}
+
+.destinations_right_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+}
+
+.destinations_right_text h3 a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.destinations_right_box:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    background-color: rgba(139, 62, 234, 0.61);
+    transition: all ease-in-out .3s;
+}
+
+.destinations_right_box:hover::after {
+    opacity: 1;
+}
+
+.destinations_right_btn a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #8B3EEA;
+    border: none;
+    transition: all ease-in-out .3s;
+}
+
+.destinations_right_btn a:hover {
+    background-color: black;
+}
+
 /* Explore Area Section Start */
 
 .heading_section h2::after {
