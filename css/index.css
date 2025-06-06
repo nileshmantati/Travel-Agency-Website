@@ -134,6 +134,33 @@ img {
     transition: all ease-in-out .4s;
 }
 
+.sub_menu {
+    position: absolute;
+    display: none;
+    top: 45px;
+    left: 0;
+    background-color: #ffffff
+}
+
+.sub_menu li {
+    list-style: none;
+}
+
+.sub_menu li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.sub_menu li a:hover {
+    color: #8B3EEA;
+    background-color: rgb(235, 235, 235);
+}
+
+.nav-item:hover .sub_menu {
+    display: block;
+}
+
 /* Home Section Start  */
 
 .home_section {

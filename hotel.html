@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Website</title>
     <link rel="icon" href="./img/Logo1.png" />
-    <link rel="stylesheet" href="./css/tours.css">
+    <link rel="stylesheet" href="./css/hotel.css">
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/all.min.css">
@@ -116,10 +116,10 @@
         <section class="home_section">
             <div class="container-lg">
                 <div class="home_text text-center">
-                    <h2 class="text-white fs-1 mb-3">Tour search result</h2>
+                    <h2 class="text-white fs-1 mb-3">Hotel search result</h2>
                     <div class="d-flex justify-content-center align-items-center">
                         <a href="./index.html">Home</a>
-                        <span><i class="fa-solid fa-circle text-white ms-2 me-3"></i>Tours</span>
+                        <span><i class="fa-solid fa-circle text-white ms-2 me-3"></i>Hotel</span>
                     </div>
                 </div>
             </div>
@@ -134,70 +134,42 @@
         <div class="container-lg">
             <div class="row">
                 <div class="search_form_area bg-white p-4 d-flex flex-column row-gap-4">
-                    <div
-                        class="tabbtn d-flex justify-content-center justify-content-md-between flex-wrap flex-md-nowrap row-gap-3">
-                        <ul class="nav1 mb-0 ps-0 d-flex column-gap-4 row-gap-3 flex-wrap justify-content-center">
-                            <li><button class="active px-3 py-2 rounded-2"><i
-                                        class="fa-solid fa-plane-departure me-2"></i>Flights</button>
-                            </li>
-                            <li><button class="px-3 py-2 rounded-2"><i class="fa-solid fa-globe me-2"></i>Tours</button>
-                            </li>
-                            <li><button class="px-3 py-2 rounded-2"><i
-                                        class="fa-solid fa-hotel me-2"></i>Hotels</button>
-                            </li>
-                        </ul>
-                        <ul class="nav2 mb-0 ps-0 d-flex column-gap-4 row-gap-2 flex-wrap justify-content-center">
-                            <li><button class="active px-3 py-2 rounded-2 border-0">One Way</button>
-                            </li>
-                            <li><button class="px-3 py-2 rounded-2 border-0">Roundtrip</button>
-                            </li>
-                            <li><button class="px-3 py-2 rounded-2 border-0">Multi city</button>
-                            </li>
-                        </ul>
-                    </div>
                     <div class="tab_content">
                         <div class="row">
                             <div class="search_form">
                                 <form action="#">
                                     <div class="row row-gap-4">
-                                        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                                             <div
-                                                class="flight_box py-2 ps-3 pe-2 position-relative d-flex flex-column align-items-start rounded-3 row-gap-1">
-                                                <p class="mb-0">From</p>
-                                                <input type="text" name="" id="" value="New York"
+                                                class="flight_box py-2 ps-3 pe-2 d-flex flex-column align-items-start rounded-3 row-gap-1">
+                                                <p class="mb-0">Destination</p>
+                                                <input type="text" name="" id="" placeholder="Where are you going?"
                                                     class="border-0 fs-4 fw-medium col-12 bg-transparent">
-                                                <span>JFK - John F, Kennedy International..</span>
-                                                <div class="plane_icon"><i
-                                                        class="fa-solid fa-plane-departure fa-xl me-2"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-                                            <div
-                                                class="flight_box py-2 ps-3 pe-2 position-relative d-flex flex-column align-items-start rounded-3 row-gap-1">
-                                                <p class="mb-0">To</p>
-                                                <input type="text" name="" id="" value="London"
-                                                    class="border-0 fs-4 fw-medium col-12 bg-transparent">
-                                                <span>LCY, London city airport</span>
-                                                <div class="plane_icon">
-                                                    <i class="fa-solid fa-plane-arrival fa-xl me-2"></i>
-                                                </div>
+                                                <span>Where are you going?</span>
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-12 col-md-6 col-lg-4">
                                             <div
-                                                class="flight_box py-2 ps-3 pe-2 position-relative d-flex flex-column align-items-start rounded-3 row-gap-1">
-                                                <p class="mb-0">From</p>
-                                                <input type="date" name="" id="" value="2022-05-05"
-                                                    class="border-0 fs-4 fw-medium col-12 bg-transparent">
-                                                <span>Thursday</span>
+                                                class="flight_box py-2 px-3 d-flex rounded-3 row-gap-2 flex-wrap flex-sm-nowrap">
+                                                <div class="jorney_date d-flex flex-column col">
+                                                    <p class="mb-0">Check In date</p>
+                                                    <input type="date" name="" id="" value="2022-05-03"
+                                                        class="border-0 fs-4 fw-medium col-10 bg-transparent">
+                                                    <span>Thursday</span>
+                                                </div>
+                                                <div class="jorney_date d-flex flex-column col">
+                                                    <p class="mb-0">Check Out date</p>
+                                                    <input type="date" name="" id="" value="2022-05-05"
+                                                        class="border-0 fs-4 fw-medium col-10 bg-transparent">
+                                                    <span>Thursday</span>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-12 col-md-6 col-lg-2">
                                             <div
-                                                class="flight_box py-2 ps-3 pe-2 position-relative d-flex flex-column align-items-start rounded-3 row-gap-1">
+                                                class="flight_box py-2 ps-3 pe-2 d-flex flex-column align-items-start rounded-3 row-gap-1">
                                                 <p class="mb-0">Passenger, Class</p>
-                                                <h4 class="fs-4 fw-medium">0 Passenger</h4>
+                                                <h4 class="fs-4 fw-medium">0 Guests</h4>
                                                 <span>Business</span>
                                             </div>
                                         </div>
@@ -221,7 +193,7 @@
             <div class="row pb-4">
                 <div class="col-12">
                     <div class="heading_section">
-                        <h2 class="pb-3 position-relative text-center display-6 fw-medium">42 tours found</h2>
+                        <h2 class="pb-3 position-relative text-center display-6 fw-medium">38 Hotel found</h2>
                     </div>
                 </div>
             </div>
@@ -300,48 +272,58 @@
                         </div>
                         <div class="left_search_box p-3 border-1 border rounded-3">
                             <div class="left_search_heading border-1 border-bottom">
-                                <h5 class="fs-6">Tour type</h5>
+                                <h5 class="fs-6">Filter by hotel star</h5>
                             </div>
                             <div class="filter_review mt-3">
                                 <form action="#">
                                     <div class="form_check d-flex align-items-center column-gap-2">
                                         <input type="checkbox">
-                                        <label class="col">
-                                            <p class="mb-0 fw-medium d-flex justify-content-between">
-                                                <span>Ecotourism</span><span>17</span>
-                                            </p>
+                                        <label for="#">
+                                            <i class="fa-solid fa-star color"></i>
+                                            <i class="fa-solid fa-star color"></i>
+                                            <i class="fa-solid fa-star color"></i>
+                                            <i class="fa-solid fa-star color"></i>
+                                            <i class="fa-solid fa-star color"></i>
                                         </label>
                                     </div>
                                     <div class="form_check d-flex align-items-center column-gap-2 mt-2">
                                         <input type="checkbox">
-                                        <label class="col">
-                                            <p class="mb-0 fw-medium d-flex justify-content-between">
-                                                <span>Escorted tour</span><span>14</span>
-                                            </p>
+                                        <label for="#">
+                                            <i class="fa-solid fa-star color"></i>
+                                            <i class="fa-solid fa-star color"></i>
+                                            <i class="fa-solid fa-star color"></i>
+                                            <i class="fa-solid fa-star color"></i>
+                                            <i class="fa-solid fa-star gray"></i>
                                         </label>
                                     </div>
                                     <div class="form_check d-flex align-items-center column-gap-2 mt-2">
                                         <input type="checkbox">
-                                        <label class="col">
-                                            <p class="mb-0 fw-medium d-flex justify-content-between">
-                                                <span>Family trips</span><span>30</span>
-                                            </p>
+                                        <label for="#">
+                                            <i class="fa-solid fa-star color"></i>
+                                            <i class="fa-solid fa-star color"></i>
+                                            <i class="fa-solid fa-star color"></i>
+                                            <i class="fa-solid fa-star gray"></i>
+                                            <i class="fa-solid fa-star gray"></i>
                                         </label>
                                     </div>
                                     <div class="form_check d-flex align-items-center column-gap-2 mt-2">
                                         <input type="checkbox">
-                                        <label class="col">
-                                            <p class="mb-0 fw-medium d-flex justify-content-between">
-                                                <span>Group tour</span><span>22</span>
-                                            </p>
+                                        <label for="#">
+                                            <i class="fa-solid fa-star color"></i>
+                                            <i class="fa-solid fa-star color"></i>
+                                            <i class="fa-solid fa-star gray"></i>
+                                            <i class="fa-solid fa-star gray"></i>
+                                            <i class="fa-solid fa-star gray"></i>
                                         </label>
                                     </div>
                                     <div class="form_check d-flex align-items-center column-gap-2 mt-2">
                                         <input type="checkbox">
-                                        <label class="col">
-                                            <p class="mb-0 fw-medium d-flex justify-content-between">
-                                                <span>City trips</span><span>41</span>
-                                            </p>
+                                        <label for="#">
+                                            <i class="fa-solid fa-star color"></i>
+                                            <i class="fa-solid fa-star gray"></i>
+                                            <i class="fa-solid fa-star gray"></i>
+                                            <i class="fa-solid fa-star gray"></i>
+                                            <i class="fa-solid fa-star gray"></i>
                                         </label>
                                     </div>
                                 </form>
@@ -350,6 +332,55 @@
                         <div class="left_search_box p-3 border-1 border rounded-3">
                             <div class="left_search_heading border-1 border-bottom">
                                 <h5 class="fs-6">Facilities</h5>
+                            </div>
+                            <div class="filter_review mt-3">
+                                <form action="#">
+                                    <div class="form_check d-flex align-items-center column-gap-2">
+                                        <input type="checkbox">
+                                        <label class="col">
+                                            <p class="mb-0 fw-medium d-flex justify-content-between">
+                                                <span>Wake-up call</span><span>20</span>
+                                            </p>
+                                        </label>
+                                    </div>
+                                    <div class="form_check d-flex align-items-center column-gap-2 mt-2">
+                                        <input type="checkbox">
+                                        <label class="col">
+                                            <p class="mb-0 fw-medium d-flex justify-content-between">
+                                                <span>Flat TV</span><span>14</span>
+                                            </p>
+                                        </label>
+                                    </div>
+                                    <div class="form_check d-flex align-items-center column-gap-2 mt-2">
+                                        <input type="checkbox">
+                                        <label class="col">
+                                            <p class="mb-0 fw-medium d-flex justify-content-between">
+                                                <span>Vehicle service</span><span>30</span>
+                                            </p>
+                                        </label>
+                                    </div>
+                                    <div class="form_check d-flex align-items-center column-gap-2 mt-2">
+                                        <input type="checkbox">
+                                        <label class="col">
+                                            <p class="mb-0 fw-medium d-flex justify-content-between">
+                                                <span>Guide service</span><span>22</span>
+                                            </p>
+                                        </label>
+                                    </div>
+                                    <div class="form_check d-flex align-items-center column-gap-2 mt-2">
+                                        <input type="checkbox">
+                                        <label class="col">
+                                            <p class="mb-0 fw-medium d-flex justify-content-between">
+                                                <span>Internet, Wifi</span><span>41</span>
+                                            </p>
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="left_search_box p-3 border-1 border rounded-3">
+                            <div class="left_search_heading border-1 border-bottom">
+                                <h5 class="fs-6">Hotel service</h5>
                             </div>
                             <div class="filter_review mt-3">
                                 <form action="#">
@@ -569,6 +600,66 @@
                                 </div>
                                 <div class="text_box p-3">
                                     <h4 class="fs-5"><a href="#">Kantua hotel, thailand</a></h4>
+                                    <p><span class="review_rate">4.8/5 Excellent</span>
+                                        <span class="review_count">(1214 reviewes)</span>
+                                    </p>
+                                    <h3 class="fs-5">$99.00 <span class="fs-6">Price starts from</span>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="content_box border-1 border rounded-4">
+                                <div class="box_img position-relative overflow-hidden">
+                                    <a href="#">
+                                        <img src="./img/hotel1.13d956e6.png" alt="">
+                                    </a>
+                                    <p class="ms-3"><i class="fas fa-map-marker-alt me-2"></i>New beach,
+                                        Thailand</p>
+                                </div>
+                                <div class="text_box p-3">
+                                    <h4 class="fs-5"><a href="#">Kantua hotel, thailand</a></h4>
+                                    <p><span class="review_rate">4.8/5 Excellent</span>
+                                        <span class="review_count">(1214 reviewes)</span>
+                                    </p>
+                                    <h3 class="fs-5">$99.00 <span class="fs-6">Price starts from</span>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="content_box border-1 border rounded-4">
+                                <div class="box_img position-relative overflow-hidden">
+                                    <a href="#">
+                                        <img src="./img/hotel2.840d2131.png" alt="">
+                                    </a>
+                                    <p class="ms-3"><i class="fas fa-map-marker-alt me-2"></i>Indonesia
+                                    </p>
+                                    <div class="discount_tab rounded-circle">
+                                        <span class="fw-medium">50%</span>
+                                    </div>
+                                </div>
+                                <div class="text_box p-3">
+                                    <h4 class="fs-5"><a href="#">Hotel paradise international</a></h4>
+                                    <p><span class="review_rate">4.8/5 Excellent</span>
+                                        <span class="review_count">(1214 reviewes)</span>
+                                    </p>
+                                    <h3 class="fs-5">$99.00 <span class="fs-6">Price starts from</span>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="content_box border-1 border rounded-4">
+                                <div class="box_img position-relative overflow-hidden">
+                                    <a href="#">
+                                        <img src="./img/hotel3.9b69bb63.png" alt="">
+                                    </a>
+                                    <p class="ms-2"><i class="fas fa-map-marker-alt me-2"></i>Kualalampur
+                                    </p>
+                                </div>
+                                <div class="text_box p-3">
+                                    <h4 class="fs-5"><a href="#">Hotel kualalampur</a></h4>
                                     <p><span class="review_rate">4.8/5 Excellent</span>
                                         <span class="review_count">(1214 reviewes)</span>
                                     </p>
