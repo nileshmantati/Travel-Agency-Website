@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Header Start */
+
+#mainHeader {
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    transition: all ease-in-out .4s;
+}
+
+#mainHeader.shrink {
+    position: fixed;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    background-color: #8B3EEA;
+}
+
+.cell_number a,
+.domain_name a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.cell_number a:hover,
+.domain_name a:hover {
+    color: black;
+}
+
+.top_ul li {
+    list-style: none;
+    position: relative;
+}
+
+.top_ul a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.top_ul .top-link:hover {
+    color: black;
+}
+
+.top_submenu {
+    display: none;
+    position: absolute;
+    top: 38px;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 15;
+}
+
+.top_submenu a {
+    color: black;
+    display: block;
+}
+
+.top_ul li:hover .top_submenu {
+    display: block;
+}
+
+.top_submenu a:hover {
+    color: #ffffff;
+    background-color: rgb(50, 50, 254);
+}
+
+.navbar-brand {
+    font-family: 'Arial', sans-serif;
+    letter-spacing: .1rem;
+    font-size: 1.8rem !important;
+    position: relative;
+}
+
+.navbar-nav li a {
+    color: #ffffff;
+    transition: all ease-in-out .2s;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar-nav li a:hover {
+    color: #ffffff;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all ease-in-out .4s;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+    left: 0;
+}
+
+.active {
+    color: #ffffff !important;
+}
+
+.nav-link.active::after {
+    left: 0 !important;
+    transform: scaleX(1) !important;
+    transition: all ease-in-out .4s;
+}
+
+.option_item #option_btn {
+    color: #ffffff;
+    background-color: #8B3EEA;
+    text-decoration: none;
+    transition: all ease-in-out .4s;
+}
+
+.sub_menu {
+    position: absolute;
+    display: none;
+    top: 45px;
+    left: 0;
+    background-color: #ffffff
+}
+
+.sub_menu li {
+    list-style: none;
+}
+
+.sub_menu li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.sub_menu li a:hover {
+    color: #8B3EEA;
+    background-color: rgb(235, 235, 235);
+}
+
+.nav-item:hover .sub_menu {
+    display: block;
+}
+
+/* Home Section Start  */
+
+.home_section {
+    background-image: url('../img/common-banner.6ccf3e41.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home_text {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.home_text h2 {
+    font-weight: 500;
+}
+
+.home_text a {
+    text-decoration: none;
+    color: rgb(201, 201, 201);
+    transition: all ease-in-out .3s;
+}
+
+.home_text span {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_text span i {
+    font-size: .5rem;
+}
+
+.home_text a:hover {
+    color: #8B3EEA;
+}
+
+/* Contact With us Section Start */
+
+.heading_section h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 200px;
+    height: 1px;
+    background-color: #8B3EEA;
+    transform: translate(-50%, -50%);
+}
+
+.cell_touch h3 a {
+    text-decoration: none;
+    color: #8B3EEA;
+}
+
+.contact_box {
+    box-shadow: -4px -5px 14px rgba(0, 0, 0, .08), 5px 8px 16px rgba(0, 0, 0, .08);
+}
+
+.contact_box p {
+    color: gray;
+}
+
+.contact_box a {
+    text-decoration: none;
+    color: #8B3EEA;
+    transition: all ease-in-out .3s;
+}
+
+.contact_box a:hover {
+    color: black;
+}
+
+.contact_form {
+    padding: 3rem;
+    box-shadow: -4px -5px 14px rgba(0, 0, 0, .08), 5px 8px 16px rgba(0, 0, 0, .08);
+}
+
+.form_inputs input {
+    border: 2px dashed #dddddd75;
+    padding: .8rem 1.2rem;
+}
+
+.form_inputs input:focus {
+    box-shadow: none;
+    border: 2px dashed #8B3EEA;
+    outline: none;
+}
+
+.form_inputs textarea {
+    border: 2px dashed #dddddd75;
+    padding: .8rem 1.2rem;
+}
+
+.form_inputs textarea:focus {
+    box-shadow: none;
+    border: 2px dashed #8B3EEA;
+    outline: none;
+}
+
+.form_inputs button {
+    color: #ffffff;
+    background-color: #8B3EEA;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: .8rem 2rem;
+    transition: all ease-in-out .3s;
+}
+
+.form_inputs button:hover {
+    background-color: black;
+}
+
+/* Newsletter Section Start */
+
+.newsletter {
+    background-color: #F3F6FD;
+}
+
+.newsletter_left {
+    display: flex;
+    align-items: center;
+}
+
+.newsletter_icon {
+    width: 15%;
+}
+
+.input_group {
+    display: flex;
+    align-items: center;
+}
+
+.input_group input {
+    padding: 1rem 0px 1rem 1.5rem;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.input_group input:focus {
+    outline: none;
+    border: 2px solid #8B3EEA;
+    border-style: dashed;
+}
+
+.input_group button {
+    color: #ffffff;
+    background-color: #8B3EEA;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+    transition: all ease-in-out .3s;
+}
+
+.input_group button:hover {
+    background-color: black;
+}
+
+/* Footer Start */
+
+.footer_heading h5 span {
+    border-bottom: 2px solid #8B3EEA;
+}
+
+.footer_inquery {
+    border-left: 2px solid #8B3EEA;
+}
+
+.footer_inquery h5 {
+    font-size: 1rem;
+}
+
+.footer_inquery h3 a {
+    text-decoration: none;
+    color: #8B3EEA;
+}
+
+.footer_inquery a {
+    transition: all ease-in-out .3s;
+}
+
+.footer_inquery a:hover {
+    color: black;
+}
+
+.footer_inquery .icons i {
+    color: #8B3EEA;
+    transition: all ease-in-out .3s;
+}
+
+.footer_inquery .icons i:hover {
+    color: black;
+}
+
+.footer_link ul li {
+    list-style: none;
+}
+
+.footer_link ul li a {
+    color: black;
+    text-decoration: none;
+    transition: all ease-in-out .3s;
+}
+
+.footer_link ul li a:hover {
+    color: #8B3EEA;
+}
+
+.copright {
+    background-color: #F3F6FD;
+}
